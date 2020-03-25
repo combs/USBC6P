@@ -174,6 +174,9 @@
 <layer number="255" name="logo" color="13" fill="1" visible="no" active="yes"/>
 </layers>
 <library>
+<description>This library contains footprints for a 6-pin USB Type C connector. 
+
+This connector does not include any data lines--just Vbus, Gnd, and CC1/CC2.</description>
 <packages>
 <package name="USCX-06FX-XXMX-01">
 <smd name="CC2" x="-0.5" y="-1.75" dx="0.7" dy="1.2" layer="1"/>
