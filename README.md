@@ -36,7 +36,9 @@ Do you have footprints for KiCad or another tool? Pull requests are welcomed.
 
 ![Eagle schematic view of USB-C 6P along with support resistors](Images/design-block.png)
 
-Drop a 1M resistor between the 'S' (shield) and GND.
+There are a lot of different opinions about how to connect the shield to reduce EMI. I personally like to add a 1M resistor between the 'S' (shield) and GND; you might also consider an RC network, LC network, or directly attaching to ground, depending on your device's particulars. The nice thing about adding at least one resistor/capacitor footprint is that you can always just fit it with a 0R resistor to directly connect it later--or remove it to disconnect.
+
+More about grounding USB connectors: [one](https://www.reddit.com/r/AskElectronics/comments/7in4a5/should_the_usb_connector_be_grounded/) [two](https://electronics.stackexchange.com/questions/389972/usb-shield-to-ground-or-not-to-ground)
 
 Then you need to decide whether your device is a *Sink* (accepts current) or *Source* (provides current) device. 
 
